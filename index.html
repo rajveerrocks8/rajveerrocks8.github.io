@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Luxe Couture</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Didot', serif;
+      background: #f5f3ee;
+      color: #222;
+    }
+    header {
+      background: #141414;
+      color: #fff;
+      padding: 3rem 2rem 2rem 2rem;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      letter-spacing: 6px;
+    }
+    nav {
+      margin-top: 1.5rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 18px;
+      font-size: 1.1em;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #d4af37;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 1rem 2rem 1rem;
+      background: linear-gradient(120deg, #fff9e7 70%, #e9dccf 100%);
+    }
+    .hero img {
+      width: 320px;
+      max-width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 6px 24px #ccc;
+      margin-bottom: 2rem;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin: 0.3em 0 0.5em 0;
+      letter-spacing: 2px;
+    }
+    .hero p {
+      font-size: 1.12em;
+      max-width: 550px;
+      margin: 0 auto 2rem auto;
+      color: #444;
+    }
+    .collections {
+      padding: 2rem 1rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .collections h3 {
+      font-size: 1.6em;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .garment-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .garment {
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 12px #e2ddd8;
+      padding: 1.2rem;
+      width: 295px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .garment:hover {
+      transform: translateY(-4px) scale(1.025);
+      box-shadow: 0 6px 18px #c9c2b9;
+    }
+    .garment img {
+      width: 90%;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+    .garment h4 {
+      margin: 0.6em 0 0.2em 0;
+      font-size: 1.18em;
+    }
+    footer {
+      background: #222;
+      color: #d4af37;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+      letter-spacing: 2px;
+    }
+    @media(max-width: 900px) {
+      .garment-list { flex-direction: column; align-items: center; }
+      .collections { padding: 0 0.5rem;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Luxe Couture</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <!-- Replace src with your own couture garment image -->
+    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=650&q=80" alt="Couture Garment">
+    <h2>Where Elegance Meets Artistry</h2>
+    <p>Discover the world of <b>Luxe Couture</b>, where every garment is a masterpiece. Experience bespoke tailoring, intricate detailing, and sophisticated silhouettes crafted to perfection.</p>
+  </section>
+
+  <section id="collections" class="collections">
+    <h3>Our Signature Collections</h3>
+    <div class="garment-list">
+      <div class="garment">
+        <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=400&q=80" alt="Evening Gown">
+        <h4>Evening Gowns</h4>
+        <p>Graceful drapes and lavish embellishments for unforgettable nights.</p>
+      </div>
+      <div class="garment">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" alt="Bridal Couture">
+        <h4>Bridal Couture</h4>
+        <p>Envision your dream wedding with exquisite creations tailored for you.</p>
+      </div>
+      <div class="garment">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80" alt="Avant Garde Dress">
+        <h4>Avant-Garde</h4>
+        <p>Bold statements and innovative design for the fashion-forward.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="collections">
+    <h3>About Luxe Couture</h3>
+    <p style="text-align:center; max-width:650px; margin:0 auto;">
+      Luxe Couture is dedicated to redefining haute couture by blending timeless elegance with modern luxury. Each piece is thoughtfully designed and meticulously handcrafted, emphasizing individuality and perfection.
+    </p>
+  </section>
+
+  <section id="contact" class="collections">
+    <h3>Contact</h3>
+    <p style="text-align:center;">
+      Email: <a href="mailto:info@luxecouture.com">info@luxecouture.com</a>
+      <br>
+      Instagram: @luxecouture
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Luxe Couture. All rights reserved.
+  </footer>
+</body>
+</html>
